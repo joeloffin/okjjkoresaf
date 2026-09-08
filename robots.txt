@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://joeloffin.github.io/okjjkoresaf/sitemap.xml
+Sitemap: https://jkolandinvestments.com/sitemap.xml
