@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-labelledby="crisisTitle crisisDesc">
+  <title id="crisisTitle">The U.S. housing shortage</title>
+  <desc id="crisisDesc">Freddie Mac estimates the United States is about 3.7 million homes short of long-run demand. Vacant land that sits unused does not house a family. Land put into production can.</desc>
+  <rect width="960" height="420" fill="#121212"/>
+  <text x="48" y="48" fill="#c59b1f" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="3.6">WHY UNUSED LAND MATTERS</text>
+  <text x="48" y="92" fill="#fafafa" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="32" font-weight="800">The country is millions of homes short.</text>
+  <text x="48" y="128" fill="#b8b8b8" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15">Unused land does not close that gap. Building does.</text>
+
+  <text x="48" y="200" fill="#c59b1f" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="64" font-weight="800">3.7M</text>
+  <text x="48" y="232" fill="#fafafa" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16">homes short of long-run U.S. demand</text>
+
+  <text x="430" y="178" fill="#8a8a8a" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.6">HOMES NEEDED</text>
+  <rect x="430" y="188" width="482" height="22" fill="#2a2a2a"/>
+  <rect x="430" y="188" width="482" height="22" fill="#c59b1f"/>
+
+  <text x="430" y="238" fill="#8a8a8a" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.6">HOMES AVAILABLE VS. THAT NEED</text>
+  <rect x="430" y="248" width="482" height="22" fill="#2a2a2a"/>
+  <rect x="430" y="248" width="318" height="22" fill="#fafafa"/>
+
+  <line x1="48" y1="270" x2="912" y2="270" stroke="#c59b1f" stroke-width="1" opacity="0.35"/>
+
+  <text x="48" y="318" fill="#fafafa" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="20" font-weight="700">We do not buy land to sit on it.</text>
+  <text x="48" y="348" fill="#b8b8b8" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15">Every parcel we purchase is intended for homes - so idle ground can become a place someone lives.</text>
+  <text x="48" y="390" fill="#7a7a7a" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12">Source: Freddie Mac housing supply estimate, Q3 2024. Bar is illustrative of a shortage, not a scaled inventory chart.</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 280" role="img" aria-labelledby="partnersTitle partnersDesc">
+  <title id="partnersTitle">Our partners: D.R. Horton, PulteGroup, and Lennar</title>
+  <desc id="partnersDesc">Logo lockup of national home builders KE Realty works with to put land into production.</desc>
+  <rect width="960" height="280" fill="#fafafa"/>
+  <rect x="1.5" y="1.5" width="957" height="277" fill="none" stroke="#c59b1f" stroke-width="1.5"/>
+  <text x="480" y="42" text-anchor="middle" fill="#a07d14" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="4.2">OUR PARTNERS</text>
+  <text x="480" y="68" text-anchor="middle" fill="#4a4a4a" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" letter-spacing="0.4">National builders we work with to put land into homes</text>
+  <line x1="80" y1="88" x2="880" y2="88" stroke="#c59b1f" stroke-width="1" opacity="0.55"/>
+
+  <!-- D.R. Horton -->
+  <g transform="translate(160, 148)">
+    <polygon points="0,-38 22,-18 18,-18 18,2 -18,2 -18,-18 -22,-18" fill="#c59b1f"/>
+    <rect x="-8" y="-10" width="16" height="12" fill="#fafafa"/>
+    <text x="0" y="36" text-anchor="middle" fill="#121212" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="1.5">D.R. HORTON</text>
+    <text x="0" y="58" text-anchor="middle" fill="#a07d14" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="2.4">AMERICA'S BUILDER</text>
+  </g>
+
+  <line x1="320" y1="118" x2="320" y2="232" stroke="#121212" stroke-width="1" opacity="0.12"/>
+
+  <!-- PulteGroup -->
+  <g transform="translate(480, 148)">
+    <polygon points="0,-38 22,-18 18,-18 18,2 -18,2 -18,-18 -22,-18" fill="#c59b1f"/>
+    <rect x="-8" y="-10" width="16" height="12" fill="#fafafa"/>
+    <text x="0" y="36" text-anchor="middle" fill="#121212" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="700">PulteGroup</text>
+    <text x="0" y="58" text-anchor="middle" fill="#a07d14" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="2.4">NATIONAL HOMEBUILDER</text>
+  </g>
+
+  <line x1="640" y1="118" x2="640" y2="232" stroke="#121212" stroke-width="1" opacity="0.12"/>
+
+  <!-- Lennar -->
+  <g transform="translate(800, 148)">
+    <polygon points="0,-38 22,-18 18,-18 18,2 -18,2 -18,-18 -22,-18" fill="#c59b1f"/>
+    <rect x="-8" y="-10" width="16" height="12" fill="#fafafa"/>
+    <text x="0" y="36" text-anchor="middle" fill="#121212" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="24" font-weight="800" letter-spacing="4">LENNAR</text>
+    <text x="0" y="58" text-anchor="middle" fill="#a07d14" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="2.4">HOMEBUILDER</text>
+  </g>
+</svg>
