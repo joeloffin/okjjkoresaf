@@ -1046,6 +1046,11 @@ a {
   transition: color 0.25s var(--ease);
 }
 
+.phone-email {
+  font-size: clamp(1.05rem, 2.4vw, 1.25rem);
+  word-break: break-word;
+}
+
 .phone-number:hover,
 .phone-number:focus-visible {
   color: var(--gold);
