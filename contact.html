@@ -9,7 +9,7 @@
     <title>Contact JKO Land Investments — Sell Land in NC, SC &amp; GA</title>
     <meta
       name="description"
-      content="Call JKO Land Investments for a no-pressure land or home offer in North Carolina, Georgia, or South Carolina. Clear terms and closings through a licensed title company or attorney."
+      content="Tell JKO Land Investments about your land or home in North Carolina, Georgia, or South Carolina. Share your name, property address, and phone number for a no-pressure offer."
     />
     <link rel="canonical" href="https://jkolandinvestments.com/contact.html" />
     <meta name="robots" content="index, follow" />
@@ -23,7 +23,7 @@
     />
     <meta
       property="og:description"
-      content="Get a no-pressure offer on unused land or a home. Call the number for your state—NC, GA, or SC."
+      content="Fill out the form with your name, property address, and phone number for a no-pressure offer in NC, GA, or SC."
     />
     <meta property="og:image" content="https://jkolandinvestments.com/assets/hero.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -42,38 +42,18 @@
         "@type": "ContactPage",
         "name": "Contact JKO Land Investments",
         "url": "https://jkolandinvestments.com/contact.html",
-        "description": "Call JKO Land Investments for a no-pressure land or home offer in North Carolina, Georgia, or South Carolina.",
+        "description": "Contact JKO Land Investments for a no-pressure land or home offer in North Carolina, Georgia, or South Carolina.",
         "mainEntity": {
           "@type": "Organization",
           "name": "JKO Land Investments LLC",
           "url": "https://jkolandinvestments.com/",
-          "email": "acquisitions@jkolandsinvestments.com",
+          "email": "acquisitions@jkolandinvestments.com",
           "contactPoint": [
             {
               "@type": "ContactPoint",
-              "telephone": "+1-980-777-7839",
+              "email": "acquisitions@jkolandinvestments.com",
               "contactType": "sales",
-              "areaServed": "US-NC",
-              "availableLanguage": "English"
-            },
-            {
-              "@type": "ContactPoint",
-              "telephone": "+1-470-970-6388",
-              "contactType": "sales",
-              "areaServed": "US-GA",
-              "availableLanguage": "English"
-            },
-            {
-              "@type": "ContactPoint",
-              "telephone": "+1-854-746-9535",
-              "contactType": "sales",
-              "areaServed": "US-SC",
-              "availableLanguage": "English"
-            },
-            {
-              "@type": "ContactPoint",
-              "email": "acquisitions@jkolandsinvestments.com",
-              "contactType": "sales",
+              "areaServed": ["US-NC", "US-SC", "US-GA"],
               "availableLanguage": "English"
             }
           ]
@@ -92,8 +72,9 @@
       href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20260912favicon" />
-    <script defer src="script.js?v=20260912favicon"></script>
+    <link rel="stylesheet" href="styles.css?v=20260921contact" />
+    <script defer src="script.js?v=20260921contact"></script>
+    <script defer src="contact-form.js?v=20260921contact"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -145,45 +126,131 @@
             Contact JKO Land Investments — sell your land or home
           </h1>
           <p class="page-lede">
-            No obligation. JKO Land Investments LLC makes the sale
-            straightforward, then puts unused land toward homes instead of a
-            hold. Closings run through a licensed title company or attorney in
-            your state.
+            Fill out the form with your property address, your name, and a phone
+            number where we can reach you. No obligation — we will follow up to
+            talk through a straightforward sale.
           </p>
         </div>
       </header>
 
-      <section class="section contact contact-plain">
-        <div class="section-inner">
-          <div class="phone-block reveal" data-reveal>
-            <ul class="phone-list">
-              <li>
-                <span class="phone-region">North Carolina</span>
-                <a class="phone-number" href="tel:+19807777839">(980) 777-7839</a>
-              </li>
-              <li>
-                <span class="phone-region">Georgia</span>
-                <a class="phone-number" href="tel:+14709706388">(470) 970-6388</a>
-              </li>
-              <li>
-                <span class="phone-region">South Carolina</span>
-                <a class="phone-number" href="tel:+18547469535">(854) 746-9535</a>
-              </li>
-              <li>
-                <span class="phone-region">Email</span>
-                <a
-                  class="phone-number phone-email"
-                  href="mailto:acquisitions@jkolandsinvestments.com"
-                  >acquisitions@jkolandsinvestments.com</a
-                >
-              </li>
-            </ul>
+      <section class="section contact contact-plain" aria-labelledby="contact-form-title">
+        <div class="section-inner contact-layout">
+          <div class="contact-intro reveal" data-reveal>
+            <p class="eyebrow">Seller form</p>
+            <h2 id="contact-form-title" class="section-title" data-title>
+              Tell us about the property
+            </h2>
+            <p class="contact-lede">
+              We buy unused land and homes in North Carolina, South Carolina, and
+              Georgia. Share the basics below and we will reach you at the number
+              you provide.
+            </p>
+            <p class="contact-email-note">
+              Prefer email?
+              <a href="mailto:acquisitions@jkolandinvestments.com"
+                >acquisitions@jkolandinvestments.com</a
+              >
+            </p>
           </div>
 
-          <div class="partners-line reveal" data-reveal style="--delay: 120ms">
-            <p class="partners-label">Home builders &amp; partners</p>
-            <a class="phone-number" href="tel:+19173465309">(917) 346-5309</a>
-          </div>
+          <form
+            id="contact-form"
+            class="contact-form reveal"
+            data-reveal
+            style="--delay: 80ms"
+            novalidate
+          >
+            <div class="form-honeypot" aria-hidden="true">
+              <label for="company_website">Company website</label>
+              <input
+                type="text"
+                id="company_website"
+                name="company_website"
+                tabindex="-1"
+                autocomplete="off"
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="full_name">Your name</label>
+              <input
+                id="full_name"
+                name="full_name"
+                type="text"
+                autocomplete="name"
+                required
+                maxlength="200"
+                placeholder="Full name"
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="phone">Phone number to reach you</label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                autocomplete="tel"
+                required
+                maxlength="40"
+                placeholder="(555) 555-5555"
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="property_address">Property address</label>
+              <input
+                id="property_address"
+                name="property_address"
+                type="text"
+                autocomplete="street-address"
+                required
+                maxlength="500"
+                placeholder="Street, city, state, ZIP"
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email <span class="optional">(optional)</span></label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                maxlength="200"
+                placeholder="you@example.com"
+              />
+            </div>
+
+            <fieldset class="form-fieldset">
+              <legend>I am a</legend>
+              <div class="form-radios">
+                <label class="form-radio">
+                  <input type="radio" name="role" value="landowner" checked />
+                  <span>Landowner / seller</span>
+                </label>
+                <label class="form-radio">
+                  <input type="radio" name="role" value="builder_partner" />
+                  <span>Home builder / partner</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="form-field">
+              <label for="message">Anything else? <span class="optional">(optional)</span></label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                maxlength="2000"
+                placeholder="Parcel details, timing, or questions"
+              ></textarea>
+            </div>
+
+            <p id="contact-form-status" class="form-status" role="status" aria-live="polite" hidden></p>
+
+            <button class="btn btn-primary" type="submit">Request an offer</button>
+          </form>
         </div>
       </section>
 
@@ -197,9 +264,9 @@
             height="280"
           />
           <p class="partners-note">
-            Builders: call the partners line above. Landowners: use the number
-            for your state. D.R. Horton, PulteGroup, and Lennar are trademarks
-            of their respective owners.
+            Builders and partners: use the form above and select “Home builder /
+            partner.” D.R. Horton, PulteGroup, and Lennar are trademarks of their
+            respective owners.
           </p>
         </div>
       </section>
