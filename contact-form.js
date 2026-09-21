@@ -3,11 +3,6 @@
   const SUPABASE_ANON_KEY =
     "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im53ZmxiYXp2ZGFtdXBkaGFxYmh5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk3MjU1MTIsImV4cCI6MjA5NTMwMTUxMn0.YjsZdMlDU6Pe9K2oIpscENd6s9gccH9vfSV3hcSzYn4";
 
-  // FormSubmit must be called from the browser on the live site (not a server).
-  // Primary inbox receives the activation email the first time.
-  const ALERT_INBOX = "offin.joel@gmail.com";
-  const ALERT_CC = "acquisitions@jkolandinvestments.com";
-
   const form = document.getElementById("contact-form");
   if (!form) return;
 
@@ -19,35 +14,6 @@
     statusEl.hidden = !message;
     statusEl.textContent = message || "";
     statusEl.dataset.status = type || "";
-  };
-
-  const sendEmailAlert = async (lead) => {
-    const response = await fetch(`https://formsubmit.co/ajax/${ALERT_INBOX}`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({
-        name: lead.full_name,
-        phone: lead.phone,
-        property_address: lead.property_address,
-        email: lead.email || "(not provided)",
-        role: lead.role,
-        message: lead.message || "(none)",
-        page_url: lead.page_url || "",
-        _subject: `New land inquiry from ${lead.full_name}`,
-        _template: "table",
-        _captcha: "false",
-        _cc: ALERT_CC,
-      }),
-    });
-
-    const result = await response.json().catch(() => ({}));
-    if (!response.ok || result.success === "false" || result.success === false) {
-      throw new Error(result.message || `Email alert failed (${response.status})`);
-    }
-    return result;
   };
 
   form.addEventListener("submit", async (event) => {
@@ -104,13 +70,6 @@
 
       if (!response.ok) {
         throw new Error(`Submit failed (${response.status})`);
-      }
-
-      try {
-        await sendEmailAlert(lead);
-      } catch (_emailError) {
-        // Lead is saved even if the email provider needs activation.
-        console.warn("Lead saved; email alert pending activation or failed.", _emailError);
       }
 
       form.reset();
